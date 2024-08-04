@@ -6,13 +6,28 @@
     <title>Profile Page</title>
     <link rel="stylesheet" href="styles.css">
     <style>
+        body {
+            margin: 0;
+            overflow: hidden; /* Prevent scrolling which might cause issues with fixed positioning */
+        }
         #particles-js {
-            position: absolute;
+            position: fixed; /* Change to fixed to cover the entire viewport */
             width: 100%;
             height: 100%;
             top: 0;
             left: 0;
-            z-index: -1;
+            z-index: -1; /* Ensure particles are behind all content */
+        }
+        .profile-container {
+            position: relative; /* Ensure relative positioning */
+            z-index: 1; /* Set a z-index to ensure text is above particles */
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            pointer-events: none; /* Ensure mouse events pass through */
+        }
+        .profile-container * {
+            pointer-events: all; /* Allow interaction with child elements */
         }
         .profile-pic {
             width: 150px; /* Adjust the size as needed */
@@ -29,6 +44,47 @@
         .social-icons img {
             width: 30px; /* Adjust the size of the icons as needed */
             height: 30px;
+        }
+        h1, p {
+            margin: 10px 0;
+        }
+        /* Mobile-friendly styles */
+        @media (max-width: 768px) {
+            .profile-container {
+                padding: 10px;
+            }
+            .profile-pic {
+                width: 100px;
+                height: 100px;
+            }
+            .social-icons {
+                gap: 5px;
+            }
+            .social-icons img {
+                width: 25px;
+                height: 25px;
+            }
+            nav ul {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                padding: 0;
+                list-style: none;
+            }
+            nav ul li {
+                display: inline;
+            }
+            nav ul li a {
+                display: block;
+                padding: 10px;
+                text-align: center;
+                background-color: #ddd;
+                text-decoration: none;
+                color: #000;
+            }
+            nav ul li a:hover {
+                background-color: #ccc;
+            }
         }
     </style>
 </head>
