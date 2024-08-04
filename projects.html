@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Justin Kwok</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .projects-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .projects-container {
+            max-width: 1000px;
+            margin: 2200px auto 0 auto; /* Increase top margin to move content further down */
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .project {
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        .project img {
+            max-width: 50%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .project img.arduino-img {
+            width: 50%; /* Adjust the size as needed */
+            height: auto;
+        }
+        .project-description {
+            margin-top: 15px;
+            text-align: left;
+            line-height: 1.6;
+        }
+        .image-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .image-grid img {
+            max-width: 50%;
+            border-radius: 10px;
+        }
+        .image-pair {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="bio.html">Bio</a></li>
+                <li><a href="exp.html">Experience</a></li>
+                <li><a href="projects.html">Projects</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="projects-container">
+            <h1>Projects</h1>
+
+            <div class="project">
+                <h2>TEJ Final Project: Arduino Car</h2>
+                <img src="arduino_circuit.png" alt="Arduino Car Project" class="arduino-img">
+                <div class="project-description">
+                    <p>For my TEJ Final Project, I created a car using an Arduino. This car is equipped with multiple features such as a horn, speed adjustment, and working signals. It was a challenging but rewarding experience to combine hardware and software to create a functional vehicle.</p>
+                </div>
+            </div>
+
+            <div class="project">
+                <h2>SHAD Project: S.E.V.E.N</h2>
+                <div class="project-description">
+                    <p>Team: Djemima B, Adam K, Justin K, Parinika D, Benifier M, Shayne Y</p>
+                    <p>During my SHAD experience, I worked on a project called S.E.V.E.N, where we aimed to address global energy use issues. We developed an eco-friendly farm that integrates sustainable technologies and serves as a learning center for both new and experienced farmers. This project helped me understand the importance of sustainability and innovation in solving real-world problems.</p>
+                </div>
+                <iframe src="https://docs.google.com/presentation/d/1M7EvmSpKu5leCqRRKITXnMtfv-TQSVM3-iLvthKPRKQ/embed?start=false&loop=false&delayms=3000&slide=id.g2782b916235_0_4574" frameborder="0" width="640" height="480" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+                <div class="image-grid">
+                    <img src="overview.jpg" alt="Overview">
+                    <div class="image-pair">
+                        <img src="media.png" alt="Media">
+                        <img src="media2.png" alt="Media 2">
+                    </div>
+                    <img src="canvasmodel.png" alt="Canvas Model">
+                    <img src="trifold.png" alt="Trifold">
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
